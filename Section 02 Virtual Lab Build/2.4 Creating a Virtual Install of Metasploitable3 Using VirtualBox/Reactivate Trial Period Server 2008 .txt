@@ -1,0 +1,16 @@
+To activate Server 2008 Standrad R2 for 30 days, open an elevated command prompt and type the following commands one at a time. 
+
+slmgr.vbs -cpky (clears key entries)
+slmgr.vbs -upk (this removes any product key that may be installed)
+slmgr.vbs -ipk YC6KT-GKW9T-YTKYR-T4X34-R7VHC
+slmgr.vbs -ato (Activate)
+
+Ignore any error message. You are now activated for 30 days. You can activate for a total of five more times. 
+
+To check time remaining on your current activation, type the following command.
+
+slmgr.vbs -dli
+
+To reactive, open an elevated command prompt and type the following command.
+
+slmgr.vbs -rearm
